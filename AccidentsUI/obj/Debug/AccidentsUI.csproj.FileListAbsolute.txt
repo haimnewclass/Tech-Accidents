@@ -1,0 +1,10 @@
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\bin\Debug\AccidentsUI.exe.config
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\bin\Debug\AccidentsUI.exe
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\bin\Debug\AccidentsUI.pdb
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.csprojAssemblyReference.cache
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.Form1.resources
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.Properties.Resources.resources
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.csproj.GenerateResource.cache
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.csproj.CoreCompileInputs.cache
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.exe
+C:\Users\ASI\source\repos\AccidentsReport\AccidentsUI\obj\Debug\AccidentsUI.pdb
