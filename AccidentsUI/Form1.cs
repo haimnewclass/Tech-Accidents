@@ -20,7 +20,11 @@ namespace AccidentsUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text =  accidentsManager.Accidents.GetTkinutByAccidentId(long.Parse(textBox1.Text)).ToString();
+            long id = long.Parse(textBox1.Text);
+            label1.Text =  accidentsManager.Accidents.GetTkinutByAccidentId(id).ToString();
+
+            label2.Text = accidentsManager.Accidents.GetSugDerechByAccidentId(id);
+
         }
     }
 }

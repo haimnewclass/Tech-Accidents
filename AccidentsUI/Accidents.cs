@@ -8,6 +8,9 @@ namespace AccidentsUI
 {
     public class Accidents
     {
+        //public Accident[] arr2 = new Accident[2019099997];
+
+        public System.Collections.Hashtable hash = new System.Collections.Hashtable();
         public Accident[] arr;
         public string fileName;
         public string[] fieldNames;
@@ -18,8 +21,19 @@ namespace AccidentsUI
             Load(fileName);
         }
 
+
+        public string GetSugDerechByAccidentId(long id)
+        {
+           
+
+            Accident acc = (Accident) hash[id];
+            
+            return acc.SugDerech;
+        }
         public byte GetTkinutByAccidentId(long id)
         {
+            
+
             byte ret = 0;
             for (int i = 0; i < arr.Length-1; i++)
             {
@@ -51,6 +65,8 @@ namespace AccidentsUI
                 };
 
                 arr[i - 1] = accident;
+                hash.Add(accident.id, accident);
+                
             }
         }
 
