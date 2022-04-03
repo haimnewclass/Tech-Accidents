@@ -1,0 +1,9 @@
+C:\Code\CSV\AccidentsReport\Item.Entities\bin\Release\Item.Entities.dll
+C:\Code\CSV\AccidentsReport\Item.Entities\bin\Release\Item.Entities.pdb
+C:\Code\CSV\AccidentsReport\Item.Entities\bin\Release\Item.Model.dll
+C:\Code\CSV\AccidentsReport\Item.Entities\bin\Release\Item.Model.pdb
+C:\Code\CSV\AccidentsReport\Item.Entities\obj\Release\Item.Entities.csproj.AssemblyReference.cache
+C:\Code\CSV\AccidentsReport\Item.Entities\obj\Release\Item.Entities.csproj.CoreCompileInputs.cache
+C:\Code\CSV\AccidentsReport\Item.Entities\obj\Release\Item.Entities.csproj.CopyComplete
+C:\Code\CSV\AccidentsReport\Item.Entities\obj\Release\Item.Entities.dll
+C:\Code\CSV\AccidentsReport\Item.Entities\obj\Release\Item.Entities.pdb
