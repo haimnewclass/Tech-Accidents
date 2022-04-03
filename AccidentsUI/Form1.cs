@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Item.BL;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace AccidentsUI
 {
@@ -68,9 +70,25 @@ namespace AccidentsUI
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private async void button6_Click(object sender, EventArgs e)
         {
-            Bank b = new Bank();
+            using (var client = new HttpClient())
+            {
+                //https://fakestoreapi.com/products/category/jewelery
+                client.BaseAddress = new Uri("https://fakestoreapi.com/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                //GET Method
+                HttpResponseMessage response = await client.GetAsync(@"products/category/jewelery");
+                if (response.IsSuccessStatusCode)
+                {
+                    string str = await response.Content.ReadAsStringAsync();
+                 }
+                else
+                {
+                    Console.WriteLine("Internal server Error");
+                }
+            }
 
 
         }
