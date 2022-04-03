@@ -21,5 +21,21 @@ namespace AccidentsUI
 
             return ret;
         }
+
+        public Product[] LoadProducts()
+        {
+            Product[] ret;
+
+            string[] lines = Read();
+
+            ret = new Product[lines.Length];
+            for (int i = 0; i < lines.Length; i++)
+            {
+                ret[i] = Product.BuildFromCSVLine(lines[i]);
+             
+            }
+
+            return ret;
+        }
     }
 }

@@ -17,13 +17,17 @@ namespace AccidentsUI
         //123,123,234
         public void Create(int linesCount)
         {
+            System.Collections.Hashtable ht = new System.Collections.Hashtable();
+            
             string[] lines = new string[linesCount];
             Random r = new Random();
 
             for (int i = 0; i < lines.Length; i++)
-            {                
-                lines[i] = r.Next(1, 999).ToString();
+            {
+                string line = $"{Guid.NewGuid()}, {r.Next(1, 999)},{r.Next(1, 999)},{r.Next(1, 999)},{DataBank.GetRandomName()}";
+                lines[i] = line;
             }
+            
 
             File.WriteAllLines(fileName, lines);
         }

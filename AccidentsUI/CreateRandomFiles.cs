@@ -13,5 +13,15 @@ namespace AccidentsUI
             NumbersFileCSV numbersFileCSV = new NumbersFileCSV(fName);
             numbersFileCSV.Create(linesCount);
         }
+
+        public void CreateBulkFiles(int filesCount,string folderName)
+        {
+            Random r = new Random();
+            for (int i = 0; i < filesCount; i++)
+            {
+                string filename = $"{folderName}{Guid.NewGuid()}.csv";
+                Run(r.Next(100, 1000), filename);
+            }
+        }
     }
 }
