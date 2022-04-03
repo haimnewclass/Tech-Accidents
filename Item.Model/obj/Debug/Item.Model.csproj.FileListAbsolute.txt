@@ -1,0 +1,6 @@
+C:\Code\CSV\AccidentsReport\Item.Model\bin\Debug\Item.Model.dll
+C:\Code\CSV\AccidentsReport\Item.Model\bin\Debug\Item.Model.pdb
+C:\Code\CSV\AccidentsReport\Item.Model\obj\Debug\Item.Model.csproj.AssemblyReference.cache
+C:\Code\CSV\AccidentsReport\Item.Model\obj\Debug\Item.Model.csproj.CoreCompileInputs.cache
+C:\Code\CSV\AccidentsReport\Item.Model\obj\Debug\Item.Model.dll
+C:\Code\CSV\AccidentsReport\Item.Model\obj\Debug\Item.Model.pdb

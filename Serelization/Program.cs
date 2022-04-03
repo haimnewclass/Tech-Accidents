@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PdfSharp;
+using Item.BL;
 using System.Text.Json;
 namespace Serelization
 {
@@ -24,7 +25,26 @@ namespace Serelization
     {
         static void Main(string[] args)
         {
-            Sample2();
+            Sample3();
+            
+        }
+
+        static void Sample3()
+        {
+            ProductItem pi = new ProductItem()
+            {
+                imgUrl = "1111111",
+                name = "ddddddd",
+                price = 2.7f,
+                details = new Details()
+                {
+                    HowToUse = "2222222222222",
+                    years = 10
+                }
+            };
+
+            string str = JsonSerializer.Serialize(pi);
+            pi = JsonSerializer.Deserialize<ProductItem>(str);
         }
         static void Sample2()
         {

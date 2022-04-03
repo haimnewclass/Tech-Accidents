@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Item.BL;
 
 namespace AccidentsUI
 {
@@ -69,13 +70,7 @@ namespace AccidentsUI
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Accident ac = new Accident()
-            {
-                id = 123,
-                SugDerech = "3",
-                SugTeuna = "2",
-                Tkinut = 1
-            };
+            Bank b = new Bank();
 
 
         }
