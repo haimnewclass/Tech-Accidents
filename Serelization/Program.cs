@@ -13,17 +13,47 @@ namespace Serelization
         public string Name { get; set; }
         public float Price { get; set; }
 
-     
+     public Data data { get; set; }
     }
-
+    public class Data
+    {
+        public int Lins { get; set; }
+        public string Img { get; set; }
+    }
     internal class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            Sample2();
+        }
+        static void Sample2()
+        {
+            // read json file
+            string data = System.IO.File.ReadAllText(@"C:\Code\CSV\AccidentsReport\Serelization\Products.json");
+
+            // deserializetion
+            Product[] arr = JsonSerializer.Deserialize<Product[]>(data);
+            float max = arr[0].price;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i].price>max)
+                {
+                    max = arr[i].price;
+                }
+            }
+
+        }
+        static void Sample()
+        {
             Item item = new Item();
             item.Id = 122;
             item.Name = "Cola";
             item.Price = 6;
+            item.data = new Data()
+            {
+                Img = "wwwwwww",
+                Lins = 456
+            };
 
             string ser = System.Text.Json.JsonSerializer.Serialize(item);
             System.IO.File.WriteAllText("serializ.txt", ser);
@@ -41,6 +71,7 @@ namespace Serelization
             System.IO.File.WriteAllText("serializ_Arr.txt", ser);
 
             Item[] arr2 = System.Text.Json.JsonSerializer.Deserialize<Item[]>(ser);
+
         }
     }
 }
